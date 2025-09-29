@@ -1,15 +1,15 @@
-# Makine Öğrenmesi – Denetimsiz Öğrenme (K-Means & Hiyerarşik Kümeleme)
+# 🤖 Makine Öğrenmesi – Denetimsiz Öğrenme (K-Means & Hiyerarşik Kümeleme)
 
 Bu repo, aynı veri seti üzerinde iki farklı **denetimsiz öğrenme** yöntemiyle (K-Means ve Hiyerarşik Kümeleme) yapılan segmentasyon çalışmalarını içerir. Çalışmalar Google Colab üzerinde geliştirilmiş ve sonuçlar görselleştirilmiştir.
 
-- Notebooks:
+- 📒 Notebooks:
   - `notebooks/KMeansClustering/K_Means_Clustering.ipynb`
   - `notebooks/HiyerarşikKümeleme/Hiyerarşik_kümele.ipynb`
-- Veri seti: `flo_data_20k.csv` (aynı veri seti iki projede de kullanılmıştır)
+- 📊 Veri seti: `flo_data_20k.csv` (aynı veri seti iki projede de kullanılmıştır)
 
 ---
 
-## Veri Seti
+## 📂 Veri Seti
 
 - Boyut: **19.945 satır × 12 sütun**
 - Bazı sütunlar:
@@ -21,7 +21,7 @@ Bu repo, aynı veri seti üzerinde iki farklı **denetimsiz öğrenme** yöntemi
 
 ---
 
-## Özellik Mühendisliği (Her iki çalışma için ortak)
+## 🛠️ Özellik Mühendisliği (Her iki çalışma için ortak)
 
 Veriden segmentasyon için kullanılacak sayısal özellikler türetilmiştir:
 
@@ -33,14 +33,14 @@ Veriden segmentasyon için kullanılacak sayısal özellikler türetilmiştir:
 - **Purchase Frequency:** `order_num_total / (tenure + 1)`
 - **Intensity:** `order_num_total / (recency + 1)`
 
-Aykırı değerleri azaltmak için sayısal sütunlarda **Winsorize (%5 alt, %5 üst)** uygulanmıştır.  
-Ölçekleme:
+📉 Aykırı değerleri azaltmak için sayısal sütunlarda **Winsorize (%5 alt, %5 üst)** uygulanmıştır.  
+⚖️ Ölçekleme:
 - K-Means için **MinMaxScaler**,
 - Hiyerarşik için **StandardScaler** kullanılmıştır.
 
 ---
 
-## 1) K-Means Clustering
+## 🔹 1) K-Means Clustering
 
 **Amaç:** Optimum k değerini belirleyip müşteri segmentlerini çıkarmak.
 
@@ -55,7 +55,7 @@ Aykırı değerleri azaltmak için sayısal sütunlarda **Winsorize (%5 alt, %5 
   - **Segment 2–3–4** kısmen örtüşüyor (benzer davranış kalıpları).
   - **Segment 5** en geniş ve dağılımı yüksek grup.
 
-> Not: Segment numaraları istatistiksel etiketlerdir; anlamları, özet istatistik ve görsellerle yorumlanır.
+> ℹ️ Not: Segment numaraları istatistiksel etiketlerdir; anlamları, özet istatistik ve görsellerle yorumlanır.
 
 ---
 
