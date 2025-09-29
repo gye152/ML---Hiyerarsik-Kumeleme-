@@ -5,11 +5,11 @@ Bu repo, aynı veri seti üzerinde iki farklı **denetimsiz öğrenme** yöntemi
 - 📒 Notebooks:
   - `notebooks/KMeansClustering/K_Means_Clustering.ipynb`
   - `notebooks/HiyerarşikKümeleme/Hiyerarşik_kümele.ipynb`
-- 📊 Veri seti: `flo_data_20k.csv` (aynı veri seti iki projede de kullanılmıştır)
+- 🗂️ Veri seti: `flo_data_20k.csv` (aynı veri seti iki projede de kullanılmıştır)
 
 ---
 
-## 📂 Veri Seti
+## 📊 Veri Seti
 
 - Boyut: **19.945 satır × 12 sütun**
 - Bazı sütunlar:
@@ -59,7 +59,7 @@ Veriden segmentasyon için kullanılacak sayısal özellikler türetilmiştir:
 
 ---
 
-## 2) Hiyerarşik Kümeleme (Agglomerative)
+## 🔹 2) Hiyerarşik Kümeleme (Agglomerative)
 
 **Amaç:** Hiyerarşik yapı üzerinden küme sayısını dendrogram ile inceleyip kesim yapmak.
 
@@ -73,11 +73,11 @@ Veriden segmentasyon için kullanılacak sayısal özellikler türetilmiştir:
   - **Cluster 3:** Yeni müşteriler, düşük harcama → geliştirilmeye açık.
   - **Cluster 4:** Uzun süredir alışveriş yapmayan, düşük değerli → kaybedilmiş müşteri profili.
 
-> Not: Küme numaraları istatistikseldir; anlamlandırma, ölçütlerin (recency, tenure, value, frequency…) kümeye göre ortalamalarıyla yapılır.
+> ℹ️ Not: Küme numaraları istatistikseldir; anlamlandırma, ölçütlerin (recency, tenure, value, frequency…) kümeye göre ortalamalarıyla yapılır.
 
 ---
 
-## Kullanılan Teknolojiler
+## ⚙️ Kullanılan Teknolojiler
 
 - Python, NumPy, Pandas
 - Scikit-learn (KMeans, AgglomerativeClustering, StandardScaler/MinMaxScaler, PCA)
